@@ -25,13 +25,13 @@ class NewsItem
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Serializer\Groups({"input", "elastica"})
+     * @Serializer\Groups({"elastica"})
      */
     protected $title;
 
     /**
      * @ORM\Column(type="datetime")
-     * @Serializer\Groups({"input", "elastica"})
+     * @Serializer\Groups({"elastica"})
      */
     protected $created;
 }
